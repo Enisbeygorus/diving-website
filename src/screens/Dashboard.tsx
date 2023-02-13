@@ -1,15 +1,11 @@
-import Home from "./Home";
+import Hero from "./Hero";
 import About from "./About";
-import Skills from "./Skills";
-import Projects from "./Projects";
 
 const Dashboard = () => {
   return (
     <div>
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
+      <Hero />
+      {/* <About /> */}
     </div>
   );
 };

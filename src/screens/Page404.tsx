@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Button from "../components/Buttons/Button";
+// import Button from "../components/Buttons/Button";
 
 const Page404 = () => {
   return (
@@ -17,7 +17,7 @@ const Page404 = () => {
           </p>
 
           <Link rel="noopener noreferrer" to="/">
-            <Button>Back to homepage</Button>
+            {/* <Button>Back to homepage</Button> */}
           </Link>
         </div>
       </div>

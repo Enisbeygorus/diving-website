@@ -8,7 +8,7 @@ const Section = ({ id, children, className = "" }: ISection) => {
   return (
     <section
       id={id}
-      className={`w-full max-w-[1100px] text-white ${className}`}
+      className={`w-full max-w-[1200px] text-white ${className}`}
     >
       {children}
     </section>

@@ -28,10 +28,11 @@ const Header: React.FC = () => {
     >
       <nav
         data-testid="header-nav"
-        className={`max-w-[1100px] w-full flex items-center justify-between flex-wrap h-full px-4 md:px-0 py-2`}
+        className={`max-w-[1100px] w-full flex items-center justify-between flex-wrap h-full px-4 py-2`}
       >
-        <div className="flex items-center flex-shrink-0 text-white mr-6">
-          <span className="font-semibold text-xl tracking-tight">Enis </span>
+        <div className="flex flex-col text-sm text-left items-start flex-shrink-0 text-white mr-6">
+          <div className="font-semibold tracking-tight">Bodrum</div>
+          <div className="font-semibold tracking-tight">Sualtı Hizmetleri</div>
         </div>
 
         <div className="block md:hidden">
@@ -54,7 +55,7 @@ const Header: React.FC = () => {
 
         <div
           style={{ transition: "height .25s ease-out" }}
-          className={`w-full overflow-hidden absolute top-full left-0 md:top-auto md:left-auto dark:bg-primaryDark2 bg-primary flex-grow 
+          className={`w-full overflow-hidden absolute top-full left-0 md:top-auto md:left-auto dark:bg-primaryDark2  flex-grow 
         md:h-auto md:relative md:flex md:items-center md:w-auto ${
           toggleMobileHeader ? "h-52" : "h-0"
         }`}

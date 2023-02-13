@@ -5,7 +5,7 @@ import Layout from "./components/Layout";
 
 function App() {
   useEffect(() => {
-    document.documentElement.classList.add("dark");
+    // document.documentElement.classList.add("dark");
   }, []);
 
   return (
