@@ -12,7 +12,7 @@ const NavLink: React.FC<NavProps> = ({ style, text, path }) => {
     <a
       href={path}
       style={style}
-      className={`block p-2 font-semibold rounded text-base uppercase text-white md:inline-block md:mt-0 dark:hover:bg-primary hover:bg-primaryDark mr-4`}
+      className={`block p-2 font-semibold rounded text-lg text-blue-600 md:inline-block md:mt-0 hover:bg-blue-600 hover:text-white mx-4 md:mx-0 md:mr-4`}
     >
       {text}
     </a>

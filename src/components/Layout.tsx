@@ -8,7 +8,7 @@ const Layout = () => {
     <div>
       <Header />
 
-      <div className={` bg-white `}>
+      <div className={` bg-white text-white`}>
         {routes.map((route, i) => {
           return <route.component key={i} />;
         })}

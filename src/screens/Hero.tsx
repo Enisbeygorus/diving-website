@@ -46,7 +46,7 @@ const Hero = () => {
         // backgroundSize: "100% auto",
       }}
     >
-      <Section id="hero" className="h-full">
+      <Section id="anasayfa" className="h-full">
         <div className="h-full w-full text-left flex flex-col justify-center -mt-20 sm:ml-10 lg:ml-0">
           <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
             BODRUM

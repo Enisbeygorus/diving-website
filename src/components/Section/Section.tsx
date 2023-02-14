@@ -6,10 +6,7 @@ interface ISection {
 
 const Section = ({ id, children, className = "" }: ISection) => {
   return (
-    <section
-      id={id}
-      className={`w-full max-w-[1200px] text-white ${className}`}
-    >
+    <section id={id} className={`w-full max-w-[1200px]  ${className}`}>
       {children}
     </section>
   );

@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import NavLink from "./NavLink";
 import { useLocation } from "react-router-dom";
 
-// bg-slate-700
-
 const Header: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [toggleMobileHeader, setToggleMobileHeader] = useState(false);
@@ -24,23 +22,23 @@ const Header: React.FC = () => {
   return (
     <header
       data-testid="header"
-      className="sticky w-full flex justify-center top-0 h-14 z-30 bg-primaryDark2"
+      className="sticky w-full flex justify-center top-0 h-14 z-40 bg-white shadow-md"
     >
       <nav
         data-testid="header-nav"
-        className={`max-w-[1100px] w-full flex items-center justify-between flex-wrap h-full px-4 py-2`}
+        className={`max-w-[1200px] w-full flex items-center justify-between flex-wrap h-full z-50 px-4 py-2 shadow-md md:shadow-none bg-white`}
       >
-        <div className="flex flex-col text-sm text-left items-start flex-shrink-0 text-white mr-6">
-          <div className="font-semibold tracking-tight">Bodrum</div>
-          <div className="font-semibold tracking-tight">Sualtı Hizmetleri</div>
+        <div className="flex flex-col text-sm text-left items-start flex-shrink-0  text-white mr-6">
+          {/* <div className="font-semibold tracking-tight">Bodrum</div>
+          <div className="font-semibold tracking-tight">Sualtı Hizmetleri</div> */}
         </div>
 
-        <div className="block md:hidden">
+        <div className="block md:hidden ">
           <button
             onClick={() => {
               setToggleMobileHeader(!toggleMobileHeader);
             }}
-            className="flex items-center px-3 py-2 border rounded text-white hover:text-white hover:border-white"
+            className="flex items-center px-3 py-2 border border-blue-600 rounded text-blue-600 "
           >
             <svg
               className="fill-current h-3 w-3"
@@ -55,9 +53,9 @@ const Header: React.FC = () => {
 
         <div
           style={{ transition: "height .25s ease-out" }}
-          className={`w-full overflow-hidden absolute top-full left-0 md:top-auto md:left-auto dark:bg-primaryDark2  flex-grow 
+          className={`w-full overflow-hidden absolute top-full left-0 md:top-auto md:left-auto bg-white  flex-grow 
         md:h-auto md:relative md:flex md:items-center md:w-auto ${
-          toggleMobileHeader ? "h-52" : "h-0"
+          toggleMobileHeader ? "h-56" : "h-0"
         }`}
         >
           <div
@@ -65,15 +63,11 @@ const Header: React.FC = () => {
             onClick={() => setToggleMobileHeader(false)}
             className="text-sm md:flex-grow md:flex md:justify-end"
           >
-            <NavLink path="/#home" text="home" />
-            <NavLink path="/#about" text="about" />
-            <NavLink path="/#skills" text="skills" />
-            <NavLink path="/#projects" text="projects" />
-            <NavLink
-              style={{ marginRight: 0 }}
-              path="/#contact"
-              text="contact"
-            />
+            <NavLink path="/#anasayfa" text="Anasayfa" />
+            <NavLink path="/#hizmetlerimiz" text="Hizmetlerimiz" />
+            <NavLink path="/#hakkımızda" text="Hakkımızda" />
+            <NavLink path="/#foto-galer" text="Galeri" />
+            <NavLink path="/#iletişim" text="İletişim" />
           </div>
         </div>
       </nav>

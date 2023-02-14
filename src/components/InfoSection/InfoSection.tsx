@@ -9,22 +9,22 @@ const infoData = [
   {
     title: "Sualtı kaynak hizmetleri",
     text: "Uzman ve tecrübeli ekibimiz ile sualtı kaynak ve kesim hizmetleri",
-    Icon: <IoWaterOutline size={iconSize} />,
+    icon: <IoWaterOutline size={iconSize} />,
   },
   {
     title: "Gemi yat tekne kurtarma",
     text: "Bugüne kadar yüzlerce batık, hasarlı tekneyi itinayla kurtardık",
-    Icon: <IoWaterOutline size={iconSize} />,
+    icon: <IoWaterOutline size={iconSize} />,
   },
   {
     title: "Sualtı kaynak hizmetleri",
     text: "Uzman ve tecrübeli ekibimiz ile sualtı kaynak ve kesim hizmetleri",
-    Icon: <IoWaterOutline size={iconSize} />,
+    icon: <IoWaterOutline size={iconSize} />,
   },
   {
     title: "Gemi yat tekne kurtarma",
     text: "Bugüne kadar yüzlerce batık, hasarlı tekneyi itinayla kurtardık",
-    Icon: <IoWaterOutline size={iconSize} />,
+    icon: <IoWaterOutline size={iconSize} />,
   },
 ];
 
@@ -32,7 +32,7 @@ const InfoSection = () => {
   const infoContent = infoData.map((obj) => {
     return (
       <li className="flex flex-col lg:flex-row mb-8">
-        <div className="flex justify-center items-center">{obj.Icon}</div>
+        <div className="flex justify-center items-center">{obj.icon}</div>
         <div className="flex flex-col justify-center">
           <h3 className="text-2xl font-bold">{obj.title}</h3>
           <p className="text-lg">{obj.text} </p>
@@ -42,7 +42,7 @@ const InfoSection = () => {
   });
 
   return (
-    <div className="h-screen py-20 flex justify-center relative">
+    <div className="lg:h-screen py-20 flex justify-center relative">
       <Section id="info">
         <>
           <div
