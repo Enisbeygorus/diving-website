@@ -14,8 +14,8 @@ const WaveSvg = () => {
       >
         <defs>
           <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-            <stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop>
-            <stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop>
+            <stop stopColor="rgba(243, 106, 62, 1)" offset="0%"></stop>
+            <stop stopColor="rgba(255, 179, 11, 1)" offset="100%"></stop>
           </linearGradient>
         </defs>
         <path
@@ -54,9 +54,9 @@ const Hero = () => {
           <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
             Sualtı <span className="text-blue-300">Hizmetleri</span>
           </h1>
-          <h3 className="max-w-2xl mb-6 font-semibold text-gray-300 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+          <p className="max-w-2xl mb-6 font-semibold text-gray-300 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
             Profesyonel ekibimiz ile her zaman ve her yerde yanınızdayız
-          </h3>
+          </p>
           <div className="flex">
             <ButtonPrimary className="flex justify-center items-center ">
               İletişim
@@ -67,9 +67,9 @@ const Hero = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
             </ButtonPrimary>

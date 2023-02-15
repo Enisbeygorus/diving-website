@@ -27,9 +27,10 @@ const whyData = [
   },
 ];
 const WhySection = () => {
-  const whyDataContent = whyData.map((obj) => {
+  const whyDataContent = whyData.map((obj, index) => {
     return (
       <div
+        key={index}
         style={{ backgroundColor: obj.wrapperBgColor }}
         className="p-10 flex flex-col items-center w-full lg:w-1/3"
       >
@@ -42,7 +43,14 @@ const WhySection = () => {
   return (
     <div>
       <div className="py-20 flex justify-center relative ">
-        <Section id="why">
+        <div
+          style={{
+            width: "800px",
+            height: "800px",
+          }}
+          className="circle absolute top-0 right-full translate-x-1/2 w-3/5 z-10 aspect-square rounded-full bg-blue-300 opacity-30"
+        ></div>
+        <Section id="why" className="z-20">
           <div>
             <h2 className="text-4xl font-bold text-center text-blue-600 mb-14 px-4">
               Neden Bodrum Sualtı Hizmetleri?

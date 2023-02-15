@@ -17,13 +17,14 @@ const GallerySection = () => {
     },
   ];
 
-  const galeryContent = galeryData.map((obj) => {
+  const galeryContent = galeryData.map((obj, index) => {
     return (
       <div
+        key={index}
         style={{ aspectRatio: "1 / 0.5" }}
         className="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4 overflow-hidden"
       >
-        <img src={obj.imageUrl} />
+        <img alt="galery_image" src={obj.imageUrl} />
         {/* <div className="w-1/2 h-1 my-2 bg-blue-300 rounded-md"></div>
         <h3 className="text-xl font-semibold">{obj.title}</h3> */}
       </div>
@@ -31,10 +32,17 @@ const GallerySection = () => {
   });
 
   return (
-    <div>
-      <div className="py-20 px-4 flex justify-center relative text-gray-700">
-        <Section id="galery" className="z-20">
-          <div>
+    <div className="md:h-screen">
+      <div className="py-20 px-4 flex justify-center relative text-gray-700 h-full">
+        <div
+          style={{
+            width: "800px",
+            height: "800px",
+          }}
+          className="circle absolute top-0 right-full translate-x-1/2 w-3/5 z-10 aspect-square rounded-full bg-blue-300 opacity-30"
+        ></div>
+        <Section id="foto-galeri" className="z-20">
+          <div className="h-full">
             <h2 className="text-4xl font-bold text-center text-blue-600 mb-14">
               Galeri
             </h2>

@@ -29,9 +29,9 @@ const infoData = [
 ];
 
 const InfoSection = () => {
-  const infoContent = infoData.map((obj) => {
+  const infoContent = infoData.map((obj, index) => {
     return (
-      <li className="flex flex-col lg:flex-row mb-8">
+      <li key={index} className="flex flex-col lg:flex-row mb-8">
         <div className="flex justify-center items-center">{obj.icon}</div>
         <div className="flex flex-col justify-center">
           <h3 className="text-2xl font-bold">{obj.title}</h3>

@@ -65,8 +65,8 @@ const Header: React.FC = () => {
           >
             <NavLink path="/#anasayfa" text="Anasayfa" />
             <NavLink path="/#hizmetlerimiz" text="Hizmetlerimiz" />
-            <NavLink path="/#hakkımızda" text="Hakkımızda" />
-            <NavLink path="/#foto-galer" text="Galeri" />
+            {/* <NavLink path="/#hakkımızda" text="Hakkımızda" /> */}
+            <NavLink path="/#foto-galeri" text="Galeri" />
             <NavLink path="/#iletişim" text="İletişim" />
           </div>
         </div>
